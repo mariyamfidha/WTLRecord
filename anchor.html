@@ -1,0 +1,28 @@
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: white;
+}
+</style>
+</head>
+<body>
+<div>
+<p><a id="myAnchor" href="log.html">Login Page</a></p>
+<p>Click the button to display the url of login page.</p>
+<button onclick="myFunction()">Get URL</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  var x = document.getElementById("myAnchor").href;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+</div>
+</body>
+</html>
