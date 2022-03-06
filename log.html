@@ -1,0 +1,20 @@
+<html>
+<body>
+Username <input type="text" name="Uname" id="Uname">
+Password  <input type="text" name="Password" id ="Password">
+<button class="button" value="Login" id="submit" onClick="validate()">Log in</button>
+<script>
+function validate(){
+	var usern="admin";
+	var passu="1234";
+	var username = document.getElementById("Uname").value;
+	var password = document.getElementById("Password").value;
+	if(username==usern && password==passu){
+	alert("Login Success");
+	}
+	else{
+	alert("INCORRECT USERNAME OR PASSWORD");	
+	}
+}
+</script>
+<body>
